@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>District Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 id="districtName"></h2>
+  <p id="districtInfo"></p>
+
+  <div class="form">
+    <input type="text" id="truckNumber" placeholder="Truck Number">
+    <input type="text" id="driverName" placeholder="Driver Name">
+    <input type="text" id="loadType" placeholder="Load Type (e.g., Sand, Cement)">
+    <button onclick="saveTruckData()">Save Data</button>
+  </div>
+
+  <h3>Saved Records</h3>
+  <ul id="truckList"></ul>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
